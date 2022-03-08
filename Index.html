@@ -10,25 +10,28 @@
 
 
 <ul>
-    <li><a class="active">Fooldal</a></li>
-    <li><a href="#foglalas">Foglalas</a></li>
-    <li><a href="#torles">Foglalas torles</a></li>
-    <li><a href="#rolunk">Rolunk</a></li>
+    <li><a class="active">Főoldal</a></li>
+    <li><a href="#foglalas">Foglalás</a></li>
+    <li><a href="#torles">Foglalás törlése</a></li>
+    <li><a href="#rolunk">Rólunk</a></li>
 </ul>
 
 <br>
 
 <div>
     <form action="app.php" target="_blank" method="post">
-        <input type="text" name="Nev" placeholder="Nev">
-        <input type="text" placeholder="Email">
+        <input type="text" name="Nev" placeholder="Név">
+        <input type="text" name="Email" placeholder="E-mail">
         <select>
-            <option value="Ugyintezes">Ugyintezes</option>
-            <option value="Iratigenyles">Iratigenyles</option>
-            <option value="Fenykepkeszites">Fenykepkeszites</option>
+            <option value="Jogositvany">Jogosítvány igénylése</option>
+            <option value="Szemelyi">Személyi igazolvány igénylése</option>
+            <option value="Utlevel">Útlevél igénylése</option>
+            <option value="Ugyfelkapu">Ügyfélkapú, E-ügyintézés</option>
+            <option value="vezet_hon">Vezetőiengedély honosítása</option>
+            <option value="oltasi">Oltási igazolvány igénylése</option>
         </select>
-        <input type="date">
-        <button>Foglalas</button>
+        <input name="Calendar" type="date">
+        <button>Foglalás</button>
     </form>
 </div>
 
