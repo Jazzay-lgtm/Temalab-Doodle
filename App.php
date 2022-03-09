@@ -2,8 +2,11 @@
 $name=$_POST["Nev"];
 $email=$_POST["Email"];
 $regex=new Regex();
-if($regex->name_regex($name)==true &&$regex->email_regex($email)){
+if($regex->name_regex($name)==true && $regex->email_regex($email)){
     echo "Sikeres foglalás!";
+}
+else if($regex->name_regex($name)==false || $regex->email_regex($email)==false){
+    echo "Sikertelen foglalás!";
 }
 class Regex
 {
