@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:#2F2FA2;
+}
+.logo_{
+    color:#F64C72;
+    font-family: 'Bebas Neue';font-size: 22px;
+    letter-spacing: 2px;
+    font-size: 33px;
+}
+
+ul{
+    display:flex;
+    justify-content: space-between;
+    width: 500px;
+    text-decoration: none;
+    overflow: hidden;
+    list-style-type: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: "Bebas Neue";
+    font-size: 14px;
+
+}
+li a:hover {
+    background-color: #F64C72;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    transition: all ease-in-out 200ms;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
