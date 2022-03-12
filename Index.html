@@ -16,11 +16,6 @@
         <div class="logo_">
             <h4><i class="fa fa-calendar"></i>|Doodle</h4>
         </div>
-        <a href="#" class="gomb">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
         <div class="navbar_links">
             <ul>
                 <li><a class="active">Főoldal</a></li>
@@ -35,10 +30,12 @@
 
     <br>
 
-    <div>
+    <div class="inputs">
         <form action="app.php" target="_blank" method="post">
             <input id="nev_ter" type="text" name="Nev" placeholder="Név">
+            <br>
             <input id="email_ter" type="text" name="Email" placeholder="E-mail">
+            <br>
             <select>
                 <option value="Jogositvany">Jogosítvány igénylése</option>
                 <option value="Szemelyi">Személyi igazolvány igénylése</option>
@@ -47,7 +44,9 @@
                 <option value="vezet_hon">Vezetőiengedély honosítása</option>
                 <option value="oltasi">Oltási igazolvány igénylése</option>
             </select>
+            <br>
             <input name="Calendar" type="date">
+            <br>
             <button>Foglalás</button>
         </form>
     </div>
