@@ -5,20 +5,20 @@
 }
 nav{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color:#2F2FA2;
     background-image: linear-gradient(
     315deg,
-    #BC3B71 8%,
-    #2F2FA2 85%
+    #BC3B71 10%,
+    #2F2FA2 70%
     );
 }
 .logo_{
     color:#F64C72;
     font-family: 'Bebas Neue';
     letter-spacing: 2px;
-    font-size: 1.6rem;
+    font-size: 1.78rem;
     margin: 0.5rem;
 }
 ul{
@@ -28,6 +28,8 @@ ul{
 }
 li{
     list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 li a{
     text-decoration: none;
@@ -43,15 +45,31 @@ li a:hover {
     width: 100%;
     transition: all ease-in-out 200ms;
 }
+body{
+    text-align: center;
+
+}
 .inputs{
     justify-content: center;
-    display: grid;
-    height: 100vh;
-    font-size: 1.2rem;
-    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 30px;
+    overflow: hidden;
+    font-size: 2.5rem;
+
 }
-#nev_ter{
+input[type=text] {
     width: 350px;
-    height: 40px;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #2F2FA2;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+::placeholder{
+    font-size: 14px;
+    font-family: "Bebas Neue";
 
 }
