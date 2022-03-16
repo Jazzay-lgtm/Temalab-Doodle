@@ -5,7 +5,7 @@
 }
 nav{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color:#2F2FA2;
     background-image: linear-gradient(
@@ -59,17 +59,43 @@ body{
     font-size: 2.5rem;
 
 }
-input[type=text] {
+input[type=text]{
     width: 350px;
     padding: 12px 30px;
     margin: 8px 0;
     display: inline-block;
-    border: 2px solid #2F2FA2;
+    border: 1px solid #2F2FA2;
     border-radius: 4px;
+    font-size: 16px;
+    font-family: ".SF NS";
     box-sizing: border-box;
 }
-::placeholder{
-    font-size: 14px;
-    font-family: "Bebas Neue";
+input[type=datetime-local]{
+    width: 350px;
+    padding: 9px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2F2FA2;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: ".SF NS";
+    box-sizing: border-box;
 
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
+    background-position-x: 100%;
+    background-position-y: 8px;
+    border: 1px solid #2F2FA2;
+    width: 350px;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    color:#BC3B71 ;
+    font-family: Arial;
+    box-sizing: border-box;
 }

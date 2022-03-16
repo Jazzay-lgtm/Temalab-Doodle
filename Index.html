@@ -35,16 +35,17 @@
             <br>
             <input id="email_ter" type="text" name="Email" placeholder="E-mail">
             <br>
-            <select>
+            <div class="select_bar">
+                <select>
                 <option value="Jogositvany">Jogosítvány igénylése</option>
                 <option value="Szemelyi">Személyi igazolvány igénylése</option>
                 <option value="Utlevel">Útlevél igénylése</option>
                 <option value="Ugyfelkapu">Ügyfélkapú, E-ügyintézés</option>
                 <option value="vezet_hon">Vezetőiengedély honosítása</option>
                 <option value="oltasi">Oltási igazolvány igénylése</option>
-            </select>
-            <br>
-            <input name="Calendar" type="date">
+                </select>
+            </div>
+            <input name="Calendar" type="datetime-local" required pattern="\d{4}-\d{2}-\d{2}">
             <br>
             <button>Foglalás</button>
         </form>

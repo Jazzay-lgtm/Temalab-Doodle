@@ -21,7 +21,7 @@ class Regex
 
     }
     public function name_regex($n){
-        if (preg_match("/^([A-ZÁÉÚŐÓÜÖÍ]([a-záéúőóüöí.]+\s?)){2,}$/", $n)) {
+        if (preg_match("/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u", $n)) {
             return true;
         }
         else {
