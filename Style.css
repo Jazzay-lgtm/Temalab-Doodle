@@ -93,9 +93,20 @@ select {
     padding: 12px 30px;
     margin: 8px 0;
     display: inline-block;
-    border-radius: 4px;
+    border-radius:4px;
     font-size: 16px;
     color:#BC3B71 ;
     font-family: Arial;
     box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color:#F64C72;
+    font-size: 16px;
+    font-family: "Bebas Neue";
+    color: white;
 }
