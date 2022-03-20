@@ -7,16 +7,13 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#2F2FA2;
-    background-image: linear-gradient(
-    315deg,
-    #BC3B71 10%,
-    #2F2FA2 70%
-    );
+    border-bottom: 2px solid white;
+
 }
 .logo_{
     color:#F64C72;
     font-family: 'Bebas Neue';
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     letter-spacing: 2px;
     font-size: 1.78rem;
     margin: 0.5rem;
@@ -37,16 +34,22 @@ li a{
     display: block;
     padding: 1.5rem;
     font-family: "Bebas Neue";
+    /*font-family: 'Source Sans Pro', sans-serif;*/
 }
 
 li a:hover {
     background-color: #F64C72;
-    height: 100%;
+    height:100%;
     width: 100%;
     transition: all ease-in-out 200ms;
 }
 body{
     text-align: center;
+    background-image: linear-gradient(
+            270deg,
+            #BC3B71 10%,
+            #4d4dcb 70%
+    );
 
 }
 .inputs{
@@ -57,6 +60,9 @@ body{
     padding: 5px 30px;
     overflow: hidden;
     font-size: 2.5rem;
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
 
 }
 input[type=text]{
@@ -67,7 +73,8 @@ input[type=text]{
     border: 1px solid #2F2FA2;
     border-radius: 4px;
     font-size: 16px;
-    font-family: ".SF NS";
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 input[type=datetime-local]{
@@ -78,10 +85,12 @@ input[type=datetime-local]{
     border: 1px solid #2F2FA2;
     border-radius: 4px;
     font-size: 16px;
-    font-family: ".SF NS";
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 
 }
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -96,9 +105,12 @@ select {
     border-radius:4px;
     font-size: 16px;
     color:#BC3B71 ;
-    font-family: Arial;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+
 }
+
 button{
     cursor: pointer;
     width: 140px;
@@ -109,4 +121,57 @@ button{
     font-size: 16px;
     font-family: "Bebas Neue";
     color: white;
+}
+
+
+
+.gombs button{
+    background-color: darkorange;
+}
+h1{
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    font-size: 300%;
+    color: white;
+ }
+h2{
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    font-size: 150%;
+    color: white;
+    /*margin-right: 300px;*/
+}
+h1{
+    padding-top: 10px;
+    padding-left: 3%;
+    text-align: left;
+}
+h2{
+    padding-left: 3%;
+    text-align: left;
+}
+.cim{
+    padding-top: 10px;
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    font-family: "Bebas Neue";
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+.sablon_sz{
+    color:#F64C72 ;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-family: "Bebas Neue";
+}
+.kep{
+    position: relative;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 55%;
+    float: right;
+    right: 10px;
 }
