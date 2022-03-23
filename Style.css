@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+
+}
+.logo_{
+    color:#F64C72;
+    font-family: 'Bebas Neue';
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    letter-spacing: 2px;
+    font-size: 1.78rem;
+    margin: 0.5rem;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1.5rem;
+    font-family: "Bebas Neue";
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+li a:hover {
+    background-color: #F64C72;
+    height:100%;
+    width: 100%;
+    transition: all ease-in-out 200ms;
+}
+body{
+    text-align: center;
+    background-image: linear-gradient(
+        270deg,
+        #BC3B71 10%,
+        #4d4dcb 70%
+    );
+
+}
+.inputs{
+    justify-content: center;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 30px;
+    overflow: hidden;
+    font-size: 2.5rem;
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+
+}
+input[type=text]{
+    width: 350px;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2F2FA2;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+input[type=datetime-local]{
+    width: 350px;
+    padding: 9px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2F2FA2;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
+    background-position-x: 100%;
+    background-position-y: 8px;
+    border: 1px solid #2F2FA2;
+    width: 350px;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius:4px;
+    font-size: 16px;
+    color:#BC3B71 ;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+
+}
+
+button{
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color:#F64C72;
+    font-size: 16px;
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+
+
+.gombs button{
+    background-color: darkorange;
+}
+h1{
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    font-size: 300%;
+    color: white;
+}
+h2{
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    font-size: 150%;
+    color: white;
+    /*margin-right: 300px;*/
+}
+h1{
+    padding-top: 10px;
+    padding-left: 3%;
+    text-align: left;
+}
+h2{
+    padding-left: 3%;
+    text-align: left;
+}
+.cim{
+    padding-top: 10px;
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    font-family: "Bebas Neue";
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+.sablon_sz{
+    color:#F64C72 ;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-family: "Bebas Neue";
+}
+.kep{
+    position: relative;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 55%;
+    float: right;
+    right: 10px;
+}
