@@ -4,7 +4,7 @@ $email=$_POST["Email"];
 
 $date = $_POST["Calendar"];
 
-include 'DatesValidates.php';
+require 'DatesValidates.php';
 
 $dates = new DateValidates();
 
