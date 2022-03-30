@@ -1,11 +1,20 @@
 <?php
 $name=$_POST["Nev"];
 $email=$_POST["Email"];
+
+$date = $_POST["Calendar"];
+
+require 'DatesValidates.php';
+
+$dates = new DateValidates();
+
+$date = date('Y-m-d H:i', strtotime($date));
+
 $regex=new Regex();
-if($regex->name_regex($name)==true && $regex->email_regex($email)){
+if($regex->name_regex($name)==true && $regex->email_regex($email) && $dates->startDateLaterNowDate($date)){
     echo "Sikeres foglalás!";
 }
-else if($regex->name_regex($name)==false || $regex->email_regex($email)==false){
+else if($regex->name_regex($name)==false || $regex->email_regex($email)==false || $dates->startDateLaterNowDate($date)==false){
     echo "Sikertelen foglalás!";
 }
 class Regex
