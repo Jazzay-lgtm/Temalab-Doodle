@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foglalás Törlése</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;594&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" href="logo2.png">
+
+</head>
+
+<header>
+  <nav>
+    <div class="logo_">
+      <h4><i class="fa fa-calendar"></i>|Doodle</h4>
+    </div>
+    <div class="navbar_links">
+      <ul>
+        <li><a href="index.html">Foglalás</a></li>
+        <li><a href="torles.html">Foglalás törlése</a></li>
+        <li><a href="rolunk.html">Rólunk</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+<body>
+<br>
+
+<!-- Foglalási kódok azzal a számmal kezdődnek, ahányadik az opció a listában, a többi randomizált (de olyan nem lehet ami már ki van adva) -->
+
+<div class="bemenetek">
+  <form action="" target="_popup" method="post">
+    <input class="mezok" id="kod_ter" type="text" name="kod" placeholder="Foglalási kód" required>
+    <br>
+    <div class="select_bar">
+      <select class="mezok">
+        <option value="Jogositvany">Jogosítvány igénylése</option>
+        <option value="Szemelyi">Személyi igazolvány igénylése</option>
+        <option value="Utlevel">Útlevél igénylése</option>
+        <option value="Ugyfelkapu">Ügyfélkapú, E-ügyintézés</option>
+        <option value="vezet_hon">Vezetőiengedély honosítása</option>
+        <option value="oltasi">Oltási igazolvány igénylése</option>
+      </select>
+    </div>
+    <button class="foglalas" type="submit">Foglalás Törlése</button>
+  </form>
+</div>
+
+</body>
+</html>
+
