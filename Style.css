@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +9,6 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid white;
-
 }
 .logo_{
     color:#F64C72;
@@ -34,14 +34,12 @@ li a{
     display: block;
     padding: 1.5rem;
     font-family: "Bebas Neue";
+    font-size: 25px;
     /*font-family: 'Source Sans Pro', sans-serif;*/
 }
 
 li a:hover {
-    background-color: #F64C72;
-    height:100%;
-    width: 100%;
-    transition: all ease-in-out 200ms;
+    opacity: 60%;
 }
 body{
     text-align: center;
@@ -52,67 +50,31 @@ body{
     );
 
 }
-.inputs{
-    justify-content: center;
+.bemenetek{
+    margin: auto;
+    margin-top: 50px;
     border-radius: 5px;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 5px 30px;
-    overflow: hidden;
-    font-size: 2.5rem;
-    background-color: white;
+    background: rgba(245, 255, 255, 0.6);
     padding: 50px;
     border-radius: 25px;
+    max-width: 80%;
 
 }
-input[type=text]{
+.mezok{
     width: 350px;
     padding: 12px 30px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #2F2FA2;
+    border: 2px solid #000000;
     border-radius: 4px;
     font-size: 16px;
     font-family: 'Manrope', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
-input[type=datetime-local]{
-    width: 350px;
-    padding: 9px 30px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #2F2FA2;
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    box-sizing: border-box;
 
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: transparent url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat;
-    background-position-x: 100%;
-    background-position-y: 8px;
-    border: 1px solid #2F2FA2;
-    width: 350px;
-    padding: 12px 30px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius:4px;
-    font-size: 16px;
-    color:#BC3B71 ;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    box-sizing: border-box;
-
-}
-
-button{
-    cursor: pointer;
+.foglalas{
+    margin-top: 30px;
     width: 140px;
     height: 40px;
     border: none;
@@ -123,7 +85,9 @@ button{
     color: white;
 }
 
-
+.foglalas:hover{
+    opacity: 40%;
+}
 
 .gombs button{
     background-color: darkorange;
@@ -132,7 +96,7 @@ h1{
     font-family: "Bebas Neue";
     letter-spacing: 1px;
     font-size: 300%;
-    color: white;
+    color: #F64C72;
 }
 h2{
     font-family: "Bebas Neue";
@@ -142,10 +106,9 @@ h2{
     /*margin-right: 300px;*/
 }
 h1{
-    padding-top: 10px;
-    padding-left: 3%;
-    text-align: left;
+    font-family: "Raleway", sans-serif
 }
+
 h2{
     padding-left: 3%;
     text-align: left;
